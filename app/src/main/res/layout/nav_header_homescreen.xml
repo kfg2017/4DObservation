@@ -23,13 +23,13 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        android:text="Mobile 4D Environment Monitoring Visualisation"
+        android:text="Mobile 4D Monitoring Visualisation"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="https://github.com/kfg2017/4DObservation" />
+        android:text="github.com/kfg2017/4DObservation" />
 
 </LinearLayout>
