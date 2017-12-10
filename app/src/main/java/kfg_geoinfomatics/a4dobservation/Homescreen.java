@@ -15,6 +15,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 public class Homescreen extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -25,7 +26,6 @@ public class Homescreen extends AppCompatActivity
         setContentView(R.layout.activity_homescreen);
         Toolbar toolbar =  findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
 
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
@@ -82,28 +82,50 @@ public class Homescreen extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_home) {
+            Toast.makeText(this, "Homescreen incoming", Toast.LENGTH_SHORT).show();
 
-            // Handle the camera action
+
         } else if (id == R.id.nav_pointcloud) {
+            Toast.makeText(this, "Pointcloud incoming", Toast.LENGTH_SHORT).show();
+            Pointcloud pointcloud = new Pointcloud();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(
+                    R.id.screen_area,
+                    pointcloud,
+                    pointcloud.getTag()).commit();
 
         } else if (id == R.id.nav_feedback) {
+            Toast.makeText(this, "Feedback Service incoming", Toast.LENGTH_SHORT).show();
+            Feedback feedback = new Feedback();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(
+                    R.id.screen_area,
+                    feedback,
+                    feedback.getTag()).commit();
 
         } else if (id == R.id.nav_statistics) {
+            Toast.makeText(this, "Statistics incoming", Toast.LENGTH_SHORT).show();
+            Statistics statistics = new Statistics();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(
+                    R.id.screen_area,
+                    statistics,
+                    statistics.getTag()).commit();
 
         } else if (id == R.id.nav_workflow) {
+            Toast.makeText(this, "Workflow incoming", Toast.LENGTH_SHORT).show();
+            Workflow workflow = new Workflow();
+            FragmentManager manager = getSupportFragmentManager();
+            manager.beginTransaction().replace(
+                    R.id.screen_area,
+                    workflow,
+                    workflow.getTag()).commit();
 
         } else if (id == R.id.nav_credits) {
+            Toast.makeText(this, "Credits incoming", Toast.LENGTH_SHORT).show();
 
         }
 
-        if(fragment != null){
-            FragmentManager fragmentManager = getSupportFragmentManager();
-            FragmentTransaction ft = fragmentManager.beginTransaction();
-
-            ft.replace(R.id.text_feedback, fragment);
-
-            ft.commit();
-        }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

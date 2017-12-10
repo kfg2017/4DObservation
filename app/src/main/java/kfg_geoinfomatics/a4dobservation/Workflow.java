@@ -16,7 +16,7 @@ public class Workflow extends Fragment {
 
     public Workflow() {
         // Required empty public constructor
-        getActivity().setTitle("workflow");
+
     }
 
 

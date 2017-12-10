@@ -16,7 +16,6 @@ public class Pointcloud extends Fragment {
 
     public Pointcloud() {
         // Required empty public constructor
-        getActivity().setTitle("pointcloud");
     }
 
 

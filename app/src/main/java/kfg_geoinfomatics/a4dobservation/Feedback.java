@@ -18,7 +18,7 @@ public class Feedback extends Fragment {
 
     public Feedback() {
         // Required empty public constructor
-        getActivity().setTitle("feedback");
+
     }
 
 

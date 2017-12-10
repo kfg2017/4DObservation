@@ -5,11 +5,12 @@
     tools:context="kfg_geoinfomatics.a4dobservation.Pointcloud">
 
     <!-- TODO: Update blank fragment layout -->
+
     <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="PointCloud"
+        android:layout_height="wrap_content"
+        android:text="Pointcloud Page"
         android:textAlignment="center"
         android:textSize="30sp" />
-
 </FrameLayout>

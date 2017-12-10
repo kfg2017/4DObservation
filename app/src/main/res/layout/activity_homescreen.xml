@@ -9,26 +9,11 @@
     tools:openDrawer="start">
 
 
-    <!-- This LinearLayout represents the contents of the screen  -->
-    <LinearLayout
-        android:id="@+id/linearLayout_homescreen"
+    <include
+        layout="@layout/app_bar_homescreen"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent" />
 
-        <!-- The ActionBar displayed at the top -->
-        <include
-            layout="@layout/app_bar_homescreen"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent" />
-
-        <!-- The main content view where fragments are loaded -->
-        <FrameLayout
-            android:id="@+id/flContent"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:layout_behavior="@string/appbar_scrolling_view_behavior" />
-    </LinearLayout>
 
 
     <android.support.design.widget.NavigationView

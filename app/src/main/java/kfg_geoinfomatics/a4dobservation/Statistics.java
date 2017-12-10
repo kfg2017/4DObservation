@@ -16,7 +16,7 @@ public class Statistics extends Fragment {
 
     public Statistics() {
         // Required empty public constructor
-        getActivity().setTitle("statistics");
+
     }
 
 
