@@ -88,7 +88,6 @@ public class Homescreen extends AppCompatActivity
 
         } else if (id == R.id.nav_feedback) {
 
-
         } else if (id == R.id.nav_statistics) {
 
         } else if (id == R.id.nav_workflow) {
