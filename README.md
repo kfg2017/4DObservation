@@ -2,7 +2,7 @@
 
 ## latest changes: 
 
-- mockup subpage toasts
+- mockup subpages + toasts
 - added SplashScreen (4 seconds on start):
 
 [![splash.jpg](https://s33.postimg.org/lmtviooe7/splash.jpg)](https://postimg.org/image/73mqh9v97/)
