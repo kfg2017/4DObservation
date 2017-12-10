@@ -1,4 +1,4 @@
-#  Educational near real-time Visualisation and Dissemination of 4D ATLS Data with an Android Application
+#  Educative near real-time Visualisation and Dissemination of 4D ATLS Data with an Android Application
 
 ## latest changes: 
 
